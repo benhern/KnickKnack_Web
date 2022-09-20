@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+    <a href="#home" class="w3-bar-item w3-button">Project 1</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -43,14 +43,39 @@ h1, h2, h3, h4, h5, h6 {
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
     <div class="w3-col m6 w3-padding-large w3-hide-small">
-     <img class="w3-image" src="/images/GoldenGate.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+        <div class="w3-content w3-display-container">
+  
+            <div class="w3-display-container mySlides">
+              <img src="images/GoldenGate.png" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-light-grey " style="opacity: 0.9;">
+                Golden Gate with its light on.
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="images/RedLine.PNG" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-light-grey" style="opacity: 0.9;">
+                Chicago Redline with its light on.
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+                <img src="images/Knicknacks.PNG" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-light-grey" style="opacity: 0.9;" >
+                  Both Knickknacks with their lights on.
+                </div>
+              </div>
+            
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+            
+            </div>
     </div>
 
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">About</h1><br>
-      <h5 class="w3-center">Tradition since 1889</h5>
-      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h5 class="w3-center">Knickknacks</h5>
+      <p class="w3-large">This project explores the use of AR through image target, in this case cubes, to create a 3D environment of an attraction chose by you! With this project you will be able to create environments of your choosing with my attractions as templates. This project does require a computer that is able to handle moderate graphics and is new roughly a computer after 2018 would be ok. In this project not only will you be able to make your own attractions, you will be able to learn how to do API calls to both the time and weather as show in the images on this site. Also in this project, you will be able to see how scripts are used to control lighting as well as sound once the cubes are rotated a certain way or when it comes into view, plays a noise. This project can used as an actual knickknack for your personal use or even create a NFT knickknack of your own by using this project. Below are steps on how to get started and where to get the code!</p>
     </div>
   </div>
   
@@ -59,26 +84,18 @@ h1, h2, h3, h4, h5, h6 {
   <!-- Building Application Section -->
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Building Application</h1><br>
-      <h4>Bread Basket</h4>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h4>Honey Almond Granola with Fruits</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+      <h1 class="w3-center">Building Application</h1>
+      <br>
+      <p>To get started on the project first you must install unity. Head over to <a href="https://unity.com"> Unity</a>  and download the version that states “LTS Release 2021.3.6f1”. This is to ensure that the project will run without complications. Feel free to use a free version or paid whichever you feel comfortable with. This program will take 11gb of space so make sure you have enough room. Once installing it will ask you what else you would like to install, click android and IOS build support. If you only have an android or iPhone then you can choose the one you have and skip the download for the other. Next, you will need to download Vuforia which is the engine that will be able to run the AR part of the program. Visit <a href="https://developer.vuforia.com">developer.vuforia.com </a>  and signup then download 10.9 version. Once Unity and Vuforia are downloaded, open up a new project and import Vuforia into the project likes so: Assets -&gt; Import Package -&gt; Custom Package -&gt; [Location of Vuforia file]. Let it update and there Vuforia is up! Now that you have the environment ready, go to my project link: <a href="https://github.com/benhern/Hernandez.Benjamin.Project1">KnickKnack Project</a> and download the zip file. Once downloaded, open the project in finder/file explorer and go to Packages -&gt; manifest.json and delete the line "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.9.3.tgz", then save. Open the project in Unity and it will ask for location of Vuforia or to add it in. Go ahead and add it. Then go to the bottom project folder and will show you scenes. Click scenes and open that scene up. To actually run it click the play button on the scene editor and use your webcam to track the cube! </p>
+
+  
     </div>
+
+    
     
     <div class="w3-col l6 w3-padding-large">
-        <iframe width="500" height="500"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        <iframe width="550" height="500"
+        src="https://youtube.com/embed/RiPq7mpmHPg">
         </iframe>
     </div>
   </div>
@@ -88,46 +105,91 @@ h1, h2, h3, h4, h5, h6 {
     <!-- Credit Section -->
     <div class="w3-row w3-padding-64" id="credit">
         <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <img src="images/GoldenGate4.png" alt="" width="520" height="500">
+            <img src="images/Redline4.png" alt="" width="520" height="500" >
 
-
-            <img src="https://images7.content-hci.com/commimg/myhotcourses/blog/post/myhc_89683.jpg" alt="">
 
         </div>
     
         <div class="w3-col m6 w3-padding-large">
           <h1 class="w3-center">Credit</h1><br>
-          <h5 class="w3-center">Tradition since 1889</h5>
-          <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
-          <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Here are a list of asset used that were both created by me and assest from the internet:</p>
+          <h2> Models from the web </h2>
+          <ol>
+          <li>Block People/Environment  - https://assetstore.unity.com/packages/3d/characters/block-people-60962 </li>
+          <li> Low Poly Cars - https://assetstore.unity.com/publishers/12124 </li>
+          <li> Modular fantasy Bridges - https://assetstore.unity.com/packages/3d/environments/fantasy/modular-fantasy-bridges-99940  </li>
+          <li> Low Poly Cloud Pack - https://assetstore.unity.com/publishers/16207  </li>
+          <li> Boats PolyPack - https://assetstore.unity.com/publishers/50405 </li>
+          <li> Water Texture - https://assetstore.unity.com/publishers/16677  </li>
+          <li> Chicago Flag - https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/1-chicago-flag-skyline-apparel-michael-s.jpg   </li>
+          <li> Golden State Warriors Logo - https://www.pngfind.com/pngs/m/693-6931512_golden-state-warriors-logo-hd-png-download.png </li>
+          <li>Train Sound - https://mixkit.co/free-sound-effects/train/ </li>
+          <li>Water Sound - https://mixkit.co/free-sound-effects/boat/ </li>
+          </ol>
+          
+          <h2> Models I Created </h2>
+          <ol>
+          <li> Red Line Train </li>
+          <li> CTA bus cards </li>
+          <li> Golden Gate Bridge </li>
+          <li> Spotlight for Chicago </li>
+          <li> Spotlight for San Francisco</li>
+          <li> Metallic Chicago Flag Material </li>
+          <li> Red line/Golden Gate red Metallic Material </li>
+          
+          
+          </ol>
+          
         </div>
       </div>
       
     <hr>
 
-      <!-- Future Application Section -->
+
+
+  <!-- About My AttractionSection -->
   <div class="w3-row w3-padding-64" id="menu">
     <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Future Application(s)</h1><br>
-      <h4>Bread Basket</h4>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
-    
-      <h4>Honey Almond Granola with Fruits</h4>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
-    
-      <h4>Belgian Waffle</h4>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h4>Scrambled eggs</h4>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h4>Blueberry Pancakes</h4>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+      <h1 class="w3-center">About My Attraction</h1>
+      <br>
+      <p>
+        In each of the models I chose an attraction that I specifically felt were important to me and fun to make. The Golden gate bridge was the fun attraction to make because it was a scene that could have any background on it since it was on land and water. I chose this attraction because I visited this location in summer 2022 and it was spectacular! I had to try to recreate the best that I could of the bridge and also the experience that I had going under the bridge via boat. Using the water boat sound was important because that is what it felt like that day being under the bridge. On the second attraction, I chose a train station that I essentially grew up on to get me everywhere in the city. It was important for me to make this because its my identity and the reason why I know so much of Chicago and the places I’ve been and the connections to other transit lines as well. Using the train passing by sound is perfect because it reminds me when I was late, early, waiting, or barely getting onto the train from the platform.  Also, I recently moved out of that neighborhood, and I wanted to pay tribute to the good old days! 
+        </p>
+        
+  
     </div>
+
+    
     
     <div class="w3-col l6 w3-padding-large">
-      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+        <img src="images/GoldenGate2.png" alt="" width="520" height="400">
+        <img src="images/Redline2.png" alt="" width="520" height="400" >
+
     </div>
   </div>
+
+
+<hr>
+
+
+    <!-- Future Applications Section -->
+    <div class="w3-row w3-padding-64" id="credit">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+            <img src="images/Cubesbg1.png" alt="" width="500" height="300">
+            <img src="images/Knicknacks.PNG" alt="" width="500" height="300">
+
+        </div>
+    
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="w3-center">Future Of AR</h1><br>
+          <p>
+            While building this application, I started to wonder how this can be applied in real life and how popular can this get? In my opinion, I think this will gain popularity especially if these knickknacks become interactive in the real world. One application that I can see this happening is using it take a glance at your digital life. For example, we can use AR glasses to track a small object that would be able to pop up your digital life. It would be able to show your socials feed, events, time, or anything that you would like. It becomes personal to the user. This would have traction with people as the knickknack itself can be customizable as well. If they wanted a knickknack of SpongeBob, they could do it! Another Idea could be posters set up around cities that could point them to famous attractions or give information about the city neighborhood. With technology evolving, AR could become a popular information tool at first then expand into something else. It could go into AR games where you can use a knickknack to virtually fight another knickknack to see who’s the strongest. It could go even further to showing a patient’s medical history by simply using AR glasses to view their knickknack. The size of these knickknack could be small but not to the point where it is microscopic. For instance, a coin or a button on shirt could act as one knickknack. This would be an ideal size for the someone as it can easily fit into a pocket, phone case, wallet etc. These would be personal knickknacks but let’s say they want something to compete or have fun watching something. A good size for something like that is a playing card to a sheet of paper. This is still mobile enough to carry around, but it also gives more room to make multiple image target to create mini worlds, games, 3D Visualization etc. Since it would have more room to make unique image targets, it can open up to more interaction for the user. On a larger scale, a poster size to even a monument plate can be used to give info, video history, movement etc. to the viewer. This would give tourists the chance to learn about the monument in their own language as well! Of course, these would be seen with AR glasses, but it could be much more interactive. With AR glasses you can have your personal knickknack control your temperature at home or turn on/off the light to your house or car. With playing cards you can link the games with real money. With larger scale image targets, you could potentially watch a movie play out right in front of you. There are endless possibilities for this to become popular in the future and I believe it can evolve to some degree the things I mentioned. It could even be more than what I listed! AR truly can be more popular if we are creative.
+            
+        </p>
+          
+        </div>
+      </div>
 
   <hr>
 
@@ -147,6 +209,29 @@ h1, h2, h3, h4, h5, h6 {
 <footer class="w3-center w3-light-grey w3-padding-32">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
+  
+
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
 
 </body>
 </html>
